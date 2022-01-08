@@ -1,0 +1,127 @@
+html, body {
+    height: 100%;
+    width: auto;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./bg_image.jpg");
+}
+
+.btn {
+    font-size: 2rem;
+    border: 30;
+    border-color: white;
+}
+
+.btn-calc {
+    background-color: white;
+}
+
+.btn-op {
+    background-color: rgb(236, 236, 236);
+}
+
+#b0 {
+    grid-area: b0;
+}
+
+#b1 {
+    grid-area: b1;
+}
+
+#b2 {
+    grid-area: b2;
+}
+
+#b3 {
+    grid-area: b3;
+}
+
+#b4 {
+    grid-area: b4;
+}
+
+#b5 {
+    grid-area: b5;
+}
+
+#b6 {
+    grid-area: b6;
+}
+
+#b8 {
+    grid-area: b8;
+}
+
+#b9 {
+    grid-area: b9;
+}
+
+#bop-0 {
+    grid-area: bop-0;
+}
+
+#bop-1 {
+    grid-area: bop-1;
+}
+
+#bop-2 {
+    grid-area: bop-2;
+}
+
+#bop-3 {
+    grid-area: bop-3;
+    
+}
+
+#bop-4 {
+    grid-area: bop-4;
+    background-color: orange;
+    border-radius: 0px 0px 30px 0px;
+}
+
+#bop-5 {
+    grid-area: bop-5;
+    border-radius: 0px 0px 0px 30px;
+}
+
+
+#display {
+    grid-area: dsp;
+    align-self: end;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    background-color: black;
+    font-size: 70px;
+    color: white;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.container {
+    display: grid;
+    height: 90%;
+    width: 90%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2fr repeat(5, 1fr);
+    grid-template-areas: 
+        "dsp dsp dsp dsp"
+        "bop-3 bop-2 bop-1 bop-0"
+        "b1 b2 b3 bop-4"
+        "b4 b5 b6 bop-4"
+        "b7 b8 b9 bop-4"
+        "bop-5 b0 bop-dot bop-4";
+    place-items: stretch;
+    place-content: stretch;
+    border-radius: 30px;
+    box-shadow: 2px 1px 200px;
+    
+}
